@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	const swiperWelcome = new Swiper('#welcomeSlider', {
 		// Optional parameters
-		loop: true,
+		effect: 'fade',
+		speed: 1000,
 		// Navigation arrows
 		navigation: {
 			prevEl: '.welcome__button--prev',

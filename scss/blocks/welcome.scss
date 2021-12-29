@@ -42,6 +42,7 @@
     max-width: 600px;
     position: relative;
     z-index: 2;
+    opacity: 0;
   }
   &__title {
     font-size: 40px;
@@ -51,18 +52,18 @@
     margin-bottom: 10px;
     opacity: 0;
     transform: translate(-50px, 0);
-    transition: 1s ease 0.3s;
+    transition: 1s ease 0.5s;
   }
   &__text {
     margin-bottom: 20px;
     opacity: 0;
     transform: translate(50px, 0);
-    transition: 1s ease 0.6s;
+    transition: 1s ease 1s;
   }
   &__link {
     color: #56CCF2;
     opacity: 0;
-    transition: 1s ease 1.2s;
+    transition: 1s ease 1.5s;
     &:hover {
       color: darken(#56CCF2, 20%);
     }
@@ -105,6 +106,9 @@
 }
 
 .swiper-slide-active {
+  .welcome__content {
+    opacity: 1;
+  }
   .welcome__title {
     opacity: 1;
     transform: translate(0,0);
