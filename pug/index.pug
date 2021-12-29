@@ -5,6 +5,7 @@ block title
 
 block style-libs
 	link(rel="stylesheet", href="css/libs/aos.css")
+	link(rel="stylesheet", href="css/libs/swiper-bundle.min.css")
 
 block content
 
@@ -13,11 +14,68 @@ block content
 		include blocks/header.pug
 		
 		.content
-			.wrapper
 
-				
+			// welcome
+			.welcome
+				.welcome__slider#welcomeSlider
+					.swiper-wrapper
+						.swiper-slide
+							picture.welcome__img
+								source(srcset="img/welcome_1-1920.jpg" media="(min-width: 1440px)")
+								source(srcset="img/welcome_1-1440.jpg" media="(min-width: 1000px)")
+								img(src="img/welcome_1-1000.jpg", alt="")
+							.wrapper
+								.container
+									.welcome__content 
+										.welcome__title 
+											span.menu-special Special 
+											| ANALOG RCA
+										.welcome__text Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям
+										a(href="#").welcome__link Подробности
+						.swiper-slide
+							picture.welcome__img
+								source(srcset="img/welcome_1-1920.jpg" media="(min-width: 1440px)")
+								source(srcset="img/welcome_1-1440.jpg" media="(min-width: 1000px)")
+								img(src="img/welcome_1-1000.jpg", alt="")
+							.wrapper
+								.container
+									.welcome__content 
+										.welcome__title 
+											span.menu-special Special 
+											| ANALOG RCA
+										.welcome__text Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям
+										a(href="#").welcome__link Подробности
+					.welcome__buttons
+						.container
+							.swiper-button-prev.welcome__button.welcome__button--prev
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_756_109)">
+									<path d="M20.7129 32.2871L7.32476 16.1423L20.7129 -0.00253202" stroke="white" stroke-width="4" stroke-linecap="square"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_756_109">
+									<rect width="32" height="32" fill="white" transform="translate(32 32) rotate(-180)"/>
+									</clipPath>
+									</defs>
+								</svg>
+
+							.swiper-button-next.welcome__button.welcome__button--next
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_756_111)">
+									<path d="M11.2871 -0.287109L24.6752 15.8577L11.2871 32.0025" stroke="white" stroke-width="4" stroke-linecap="square"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_756_111">
+									<rect width="32" height="32" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+
+					
+			//	/welcome
 			
 		include blocks/footer.pug
 
 block js-libs
 	script(src="js/libs/aos.js")
+	script(src="js/libs/swiper-bundle.min.js") 

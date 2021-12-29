@@ -1,34 +1,105 @@
 // header
 header.header#header
 	.wrapper
-		.header_container
+
+		.header__logo 
+			a(href="#") 
+				img(src="img/logo.svg", alt="")
+
+		.header__container
+
+			// search
+			.search
+				.search__icon.js-dropTrigger(data-drop="searchDrop")
+					svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+						circle(cx="10" cy="10.5" r="6.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+						rect(x="13.3008" y="15.5264" width="1.75469" height="6.74683" rx="0.877343" transform="rotate(-45 13.3008 15.5264)")
+				form(action="#").search__drop#searchDrop
+					.search__input 
+						input(type="text")
+					button(type="submit").search__btn Искать
+			//	/search
 
 			// menu
-			//- .menu--left .menu--right
 			.js-menu.menu.menu--right
 				#menu-btn.menu__btn.hamburger.hamburger--squeeze
 					.hamburger-box
 						.hamburger-inner
 				nav.menu__nav
 					ul.menu__list
+						li.menu__child
+							a(href="#") Бренд
+							ul.menu__drop 
+								li
+									ul.menu__sublist 
+										li 
+											a(href="#") Компания
+										li 
+											a(href="#") Философия
+										li 
+											a(href="#") Основные принципы
 						li
-							a(href="#") Меню 1
+							a(href="#") Технологии
 						li
-							a(href="#") Меню 2
+							a(href="#") Материалы
+						li.menu__child
+							a(href="#") Продукция
+							ul.menu__drop 
+								li 
+									ul.menu__sublist 
+										li
+											span.menu__title Типы кабелей
+										li 
+											a(href="#") Аналоговые межкомпонентные кабели
+										li 
+											a(href="#") Цифровые межкомпонентные кабели
+										li 
+											a(href="#") Сабвуферные кабели
+										li 
+											a(href="#") Аккустические кабели
+										li 
+											a(href="#") Силовые кабели
+										li 
+											a(href="#") Разъемы
+								li 
+									ul.menu__sublist.menu__sublist--lines
+										li 
+											span.menu__title Линейки
+										li 
+											a(href="#").menu-standard StandarD
+										li 
+											a(href="#").menu-special Special
+										li 
+											a(href="#").menu-classic Classic
+										li 
+											a(href="#").menu-reference Reference
+										li 
+											a(href="#").menu-ultimate Ultimate
+										li 
+											a(href="#").menu-pro Pro
 						li
-							a(href="#") Меню 3
+							a(href="#") Новости
 						li
-							a(href="#") Меню 4
+							a(href="#") Тесты
 						li
-							a(href="#") Меню 5
+							a(href="#") FAQ
 						li
-							a(href="#") Меню 6
-						li
-							a(href="#") Меню 7
-						li
-							a(href="#") Меню 8
+							a(href="#") Контакты
 					#menu-close.menu__close
 				#menu-over.menu__over
 			// /menu
+
+			// lang
+			.lang
+				.lang__btn.js-dropTrigger(data-drop="langDrop") RU
+				.lang__drop#langDrop
+					ul.lang__list 
+						li 
+							a(href="#") Русский
+						li 
+							a(href="#") English
+						li 
+							a(href="#") 中文
+			//	/lang
 
 // /header
