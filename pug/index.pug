@@ -1,0 +1,23 @@
+extends blocks/base.pug
+
+block title 
+	title Главная
+
+block style-libs
+	link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			.wrapper
+
+				
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/aos.js")
