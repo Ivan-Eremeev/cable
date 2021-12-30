@@ -22,10 +22,12 @@
       }
     }
   }
-  @media (max-width: $break_xs) {
-    padding: 10px 0;
+  @media (max-width: $break_sm) {
     &__logo {
       width: 57px;
     }
+  }
+  @media (max-width: $break_xs) {
+    padding: 10px 0;
   }
 }

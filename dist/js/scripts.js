@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const swiperWelcome = new Swiper('#welcomeSlider', {
 		effect: 'fade',
 		speed: 1000,
+		autoplay: {
+			delay: 5000,
+		},
 		navigation: {
 			prevEl: '.welcome__button--prev',
 			nextEl: '.welcome__button--next',
@@ -50,12 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Инициализация swiper на мобилке
 	function swiperToggleInit() {
 		let swiperLines = undefined,
-				swiperTypes = undefined;
+				swiperTypes = undefined,
+				swiperNews = undefined;
 		swiperLinesToggle();
 		swiperTypesToggle();
+		swiperNewsToggle();
 		window.addEventListener('resize', () => {
 			swiperLinesToggle();
 			swiperTypesToggle();
+			swiperNewsToggle();
 		})
 		function swiperLinesToggle() {
 			if (window.innerWidth <= breakSm && swiperLines == undefined) {
@@ -85,6 +91,21 @@ document.addEventListener('DOMContentLoaded', () => {
 			} else if (window.innerWidth > breakSm && swiperTypes != undefined) {
 				swiperTypes.destroy();
 				swiperTypes = undefined;
+			}
+		}
+		function swiperNewsToggle() {
+			if (window.innerWidth <= breakSm && swiperNews == undefined) {
+				swiperNews = new Swiper('#newsSlider', {
+					slidesPerView: 1,
+					breakpoints: {
+						500: {
+							slidesPerView: 2,
+						},
+					}
+				});
+			} else if (window.innerWidth > breakSm && swiperNews != undefined) {
+				swiperNews.destroy();
+				swiperNews = undefined;
 			}
 		}
 	}

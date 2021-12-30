@@ -1,0 +1,102 @@
+.news {
+  margin-bottom: 90px;
+  .title {
+    margin-bottom: 30px;
+  }
+  &__col {
+    @include col(4);
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #F7F8FA;
+    color: #333;
+  }
+  &__img {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__sticker {
+    max-width: 90%;
+    padding: 4px 12px 4px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &__content {
+    padding: 30px 28px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 16px;
+    flex-grow: 1;
+    margin-bottom: 80px;
+  }
+  &__date {
+    font-size: 16px;
+    color: #828282;
+  }
+  @media (min-width: $break_sm + 1) {
+    .row {
+      width: auto;
+    }
+    &__col {
+      margin-bottom: $gutter;
+      &:nth-child(1) {
+        @include col(12);
+        .news__card {
+          display: flex;
+          flex-direction: row;
+          min-height: 360px;
+        }
+        .news__img {
+          height: auto;
+          @include col(8);
+        }
+        .news__content {
+          @include col(4);
+        }
+      }
+    }
+    &__card {
+      transition: 0.5s;
+      &:hover {
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    .title {
+      margin-bottom: 20px;
+    }
+    margin-bottom: 80px;
+    .row {
+      flex-wrap: nowrap;
+      margin-left: -20px;
+    }
+    &__col {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
