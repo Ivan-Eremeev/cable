@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
-		<link rel="stylesheet" href="css/libs/aos.css">
 		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -15,7 +14,7 @@
 			<!-- header-->
 			<header class="header" id="header">
 				<div class="wrapper">
-					<div class="header__logo"> <a href="#"> <img src="img/logo.svg" alt=""></a></div>
+					<div class="header__logo tablet-hide"><a href="#"> <img src="img/logo.svg" alt=""></a></div>
 					<div class="header__container">
 						<!-- search-->
 						<div class="search">
@@ -35,11 +34,7 @@
 						<!--	/search-->
 						<!-- menu-->
 						<div class="js-menu menu menu--right">
-							<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
-								<div class="hamburger-box">
-									<div class="hamburger-inner"></div>
-								</div>
-							</div>
+							<div class="header__logo tablet-visible"><a href="#"> <img src="img/logo.svg" alt=""></a></div>
 							<nav class="menu__nav">
 								<ul class="menu__list">
 									<li class="menu__child"><a href="#">Бренд</a>
@@ -71,12 +66,12 @@
 											<li> 
 												<ul class="menu__sublist menu__sublist--lines">
 													<li> <span class="menu__title">Линейки</span></li>
-													<li> <a class="menu-standard" href="#">StandarD</a></li>
-													<li> <a class="menu-special" href="#">Special</a></li>
-													<li> <a class="menu-classic" href="#">Classic</a></li>
-													<li> <a class="menu-reference" href="#">Reference</a></li>
-													<li> <a class="menu-ultimate" href="#">Ultimate</a></li>
-													<li> <a class="menu-pro" href="#">Pro</a></li>
+													<li> <a class="color-standard" href="#">StandarD</a></li>
+													<li> <a class="color-special" href="#">Special</a></li>
+													<li> <a class="color-classic" href="#">Classic</a></li>
+													<li> <a class="color-reference" href="#">Reference</a></li>
+													<li> <a class="color-ultimate" href="#">Ultimate</a></li>
+													<li> <a class="color-pro" href="#">Pro</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -92,7 +87,7 @@
 						</div>
 						<!-- /menu-->
 						<!-- lang-->
-						<div class="lang">
+						<div class="lang tablet-hide">
 							<div class="lang__btn js-dropTrigger" data-drop="langDrop">RU</div>
 							<div class="lang__drop" id="langDrop">
 								<ul class="lang__list"> 
@@ -103,6 +98,11 @@
 							</div>
 						</div>
 						<!--	/lang-->
+						<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -120,7 +120,7 @@
 								<div class="wrapper">
 									<div class="container">
 										<div class="welcome__content"> 
-											<div class="welcome__title"> <span class="menu-special">Special </span>ANALOG RCA</div>
+											<div class="welcome__title"> <span class="color-special">Special </span>ANALOG RCA</div>
 											<div class="welcome__text">Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям</div><a class="welcome__link" href="#">Подробности</a>
 										</div>
 									</div>
@@ -131,7 +131,7 @@
 								<div class="wrapper">
 									<div class="container">
 										<div class="welcome__content"> 
-											<div class="welcome__title"> <span class="menu-special">Special </span>ANALOG RCA</div>
+											<div class="welcome__title"> <span class="color-standard">StandarD </span>ANALOG RCA</div>
 											<div class="welcome__text">Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям</div><a class="welcome__link" href="#">Подробности</a>
 										</div>
 									</div>
@@ -145,7 +145,7 @@
 								<div class="wrapper">
 									<div class="container">
 										<div class="welcome__content"> 
-											<div class="welcome__title"> <span class="menu-special">Special </span>ANALOG RCA</div>
+											<div class="welcome__title"> <span class="color-special">Special </span>ANALOG RCA</div>
 											<div class="welcome__text">Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям</div><a class="welcome__link" href="#">Подробности</a>
 										</div>
 									</div>
@@ -154,33 +154,95 @@
 						</div>
 						<div class="welcome__buttons">
 							<div class="container">
-								<div class="swiper-button-prev welcome__button welcome__button--prev"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_756_109)">
-<path d="M20.7129 32.2871L7.32476 16.1423L20.7129 -0.00253202" stroke="white" stroke-width="4" stroke-linecap="square"/>
-</g>
-<defs>
-<clipPath id="clip0_756_109">
-<rect width="32" height="32" fill="white" transform="translate(32 32) rotate(-180)"/>
-</clipPath>
-</defs>
-</svg>
+								<div class="swiper-button-prev welcome__button welcome__button--prev">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_756_109)">
+											<path d="M20.7129 32.2871L7.32476 16.1423L20.7129 -0.00253202" stroke="white" stroke-width="4" stroke-linecap="square"></path>
+										</g>
+										<defs>
+											<clipPath id="clip0_756_109">
+												<rect width="32" height="32" fill="white" transform="translate(32 32) rotate(-180)"></rect>
+											</clipPath>
+										</defs>
+									</svg>
 								</div>
-								<div class="swiper-button-next welcome__button welcome__button--next"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_756_111)">
-<path d="M11.2871 -0.287109L24.6752 15.8577L11.2871 32.0025" stroke="white" stroke-width="4" stroke-linecap="square"/>
-</g>
-<defs>
-<clipPath id="clip0_756_111">
-<rect width="32" height="32" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+								<div class="swiper-button-next welcome__button welcome__button--next">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_756_111)">
+											<path d="M11.2871 -0.287109L24.6752 15.8577L11.2871 32.0025" stroke="white" stroke-width="4" stroke-linecap="square"></path>
+										</g>
+										<defs>
+											<clipPath id="clip0_756_111">
+												<rect width="32" height="32" fill="white"></rect>
+											</clipPath>
+										</defs>
+									</svg>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!--	/welcome-->
+				<div class="wrapper">	
+					<div class="container">
+						<!-- descript-->
+						<section class="descript">
+							<h1 class="title">Производится в России с 2001</h1>
+							<p>С момента выхода на рынок в 2002 году марка Tchernov Cable практически сразу встала в один ряд с ведущими мировыми производителями специализированной кабельной продукции для аудио-видео. Сегодня мы предлагаем широкий спектр проводов и кабелей как бытового, так и профессионального назначения для любых видов инсталляций. Наша продукция продолжает завоёвывать новые рынки: неуклонно растёт число наших дистрибьюторов в мире и все больше любителей хорошего звука во многих странах делают свой выбор в пользу Tchernov Cable.</p>
+						</section>
+						<!--	/descript-->
+						<!-- lines-->
+						<section class="lines">
+							<h2 class="title">Линейки продуктов</h2>
+							<p class="lines__text">В изделиях Tchernov Cable используется самое качественное сырьё, материалы и комплектующие</p>
+							<div class="lines__slider" id="linesSlider">
+								<div class="row swiper-wrapper">
+									<div class="lines__col swiper-slide"><a class="lines__card" href="#"> <img class="lines__img" src="img/lines-standart.jpg" alt="">
+											<div class="lines__title color-standard">Standard</div></a></div>
+									<div class="lines__col swiper-slide"><a class="lines__card" href="#"> <img class="lines__img" src="img/lines-special.jpg" alt="">
+											<div class="lines__title color-special">Special</div></a></div>
+									<div class="lines__col swiper-slide"><a class="lines__card" href="#"> <img class="lines__img" src="img/lines-classic.jpg" alt="">
+											<div class="lines__title color-classic">Classic</div></a></div>
+									<div class="lines__col swiper-slide"><a class="lines__card" href="#"> <img class="lines__img" src="img/lines-reference.jpg" alt="">
+											<div class="lines__title color-reference">Reference</div></a></div>
+									<div class="lines__col swiper-slide"><a class="lines__card" href="#"> <img class="lines__img" src="img/lines-ultimate.jpg" alt="">
+											<div class="lines__title color-ultimate">Ultimate</div></a></div>
+									<div class="lines__col swiper-slide"><a class="lines__card" href="#"> <img class="lines__img" src="img/lines-pro.jpg" alt="">
+											<div class="lines__title color-pro">Pro</div></a></div>
+								</div>
+							</div>
+						</section>
+						<!--	/lines-->
+						<!-- types-->
+						<section class="types">
+							<h2 class="title">Типы кабеля</h2>
+							<p class="types__text">Все конструкции Tchernov Cable с медными токопроводящими жилами и экранами — наши собственные разработки</p>
+							<div class="types__slider" id="typesSlider">
+								<div class="row swiper-wrapper">
+									<div class="types__col swiper-slide"><a class="types__card" href="#">
+											<div class="types__img"><img src="img/cable-digital.jpg" alt=""></div>
+											<div class="types__title">Аналоговые <br>межкомпонентные кабели</div></a></div>
+									<div class="types__col swiper-slide"><a class="types__card" href="#">
+											<div class="types__img"><img src="img/cable-dimmer.jpg" alt=""></div>
+											<div class="types__title">Цифровые <br>межкомпонентные кабели</div></a></div>
+									<div class="types__col swiper-slide"><a class="types__card" href="#">
+											<div class="types__img"><img src="img/cable-sw.jpg" alt=""></div>
+											<div class="types__title">Сабвуферные кабели</div></a></div>
+									<div class="types__col swiper-slide"><a class="types__card" href="#">
+											<div class="types__img"><img src="img/cable-accoustic.jpg" alt=""></div>
+											<div class="types__title">Аккустические <br>кабели</div></a></div>
+									<div class="types__col swiper-slide"><a class="types__card" href="#">
+											<div class="types__img"><img src="img/cable-power.jpg" alt=""></div>
+											<div class="types__title">Силовые кабели</div></a></div>
+									<div class="types__col swiper-slide"><a class="types__card" href="#">
+											<div class="types__img"><img src="img/cable-jacks.jpg" alt=""></div>
+											<div class="types__title">Разъемы</div></a></div>
+								</div>
+							</div>
+						</section>
+						<!--	/types-->
+					</div>
+				</div>
 			</div>
 			<!-- footer-->
 			<footer class="footer"> 
@@ -188,7 +250,6 @@
 			</footer>
 			<!-- /footer-->
 		</div>
-		<script src="js/libs/aos.js"></script>
 		<script src="js/libs/swiper-bundle.min.js"> </script>
 		<script src="js/scripts.js"></script>
 	</body>

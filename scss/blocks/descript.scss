@@ -1,0 +1,7 @@
+.descript {
+  max-width: 900px;
+  margin-bottom: 60px;
+  @media (max-width: $break_sm) {
+    margin-bottom: 40px;
+  }
+}

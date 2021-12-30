@@ -76,24 +76,6 @@
 		font-size: 16px;
 		color: #fff;
 	}
-	&-standard {
-		color: #437B50 !important;
-	}
-	&-special {
-		color: #80858C !important;
-	}
-	&-classic {
-		color: #7D3461 !important;
-	}
-	&-reference {
-		color: #D9B700 !important;
-	}
-	&-ultimate {
-		color: #9C9C9C !important;
-	}
-	&-pro {
-		color: #6A6A6A !important;
-	}
 	@media (max-width: $break_md) {
 		&__nav {
 			width: 100%;
@@ -116,6 +98,10 @@
 		}
 		&__btn {
 			display: inline-block;
+			padding-right: 0;
+			.hamburger-box {
+				display: block;
+			}
 		}
 
 		&--left {

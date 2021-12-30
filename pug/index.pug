@@ -4,7 +4,6 @@ block title
 	title Главная
 
 block style-libs
-	link(rel="stylesheet", href="css/libs/aos.css")
 	link(rel="stylesheet", href="css/libs/swiper-bundle.min.css")
 
 block content
@@ -28,7 +27,7 @@ block content
 								.container
 									.welcome__content 
 										.welcome__title 
-											span.menu-special Special 
+											span.color-special Special 
 											| ANALOG RCA
 										.welcome__text Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям
 										a(href="#").welcome__link Подробности
@@ -39,7 +38,7 @@ block content
 								.container
 									.welcome__content 
 										.welcome__title 
-											span.menu-special Special 
+											span.color-standard StandarD 
 											| ANALOG RCA
 										.welcome__text Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям
 										a(href="#").welcome__link Подробности
@@ -52,41 +51,108 @@ block content
 								.container
 									.welcome__content 
 										.welcome__title 
-											span.menu-special Special 
+											span.color-special Special 
 											| ANALOG RCA
 										.welcome__text Силовой кабель класса High End. Играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям
 										a(href="#").welcome__link Подробности
 					.welcome__buttons
 						.container
 							.swiper-button-prev.welcome__button.welcome__button--prev
-								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_756_109)">
-									<path d="M20.7129 32.2871L7.32476 16.1423L20.7129 -0.00253202" stroke="white" stroke-width="4" stroke-linecap="square"/>
-									</g>
-									<defs>
-									<clipPath id="clip0_756_109">
-									<rect width="32" height="32" fill="white" transform="translate(32 32) rotate(-180)"/>
-									</clipPath>
-									</defs>
-								</svg>
-
+								svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+									g(clip-path="url(#clip0_756_109)")
+										path(d="M20.7129 32.2871L7.32476 16.1423L20.7129 -0.00253202" stroke="white" stroke-width="4" stroke-linecap="square")
+									defs
+										clipPath(id="clip0_756_109")
+											rect(width="32" height="32" fill="white" transform="translate(32 32) rotate(-180)")
 							.swiper-button-next.welcome__button.welcome__button--next
-								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_756_111)">
-									<path d="M11.2871 -0.287109L24.6752 15.8577L11.2871 32.0025" stroke="white" stroke-width="4" stroke-linecap="square"/>
-									</g>
-									<defs>
-									<clipPath id="clip0_756_111">
-									<rect width="32" height="32" fill="white"/>
-									</clipPath>
-									</defs>
-								</svg>
-
-					
+								svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+									g(clip-path="url(#clip0_756_111)")
+										path(d="M11.2871 -0.287109L24.6752 15.8577L11.2871 32.0025" stroke="white" stroke-width="4" stroke-linecap="square")
+									defs
+										clipPath(id="clip0_756_111")
+											rect(width="32" height="32" fill="white")
 			//	/welcome
+
+			.wrapper 	
+				.container
+
+					// descript
+					section.descript
+						h1.title Производится в России с 2001
+						p С момента выхода на рынок в 2002 году марка Tchernov Cable практически сразу встала в один ряд с ведущими мировыми производителями специализированной кабельной продукции для аудио-видео. Сегодня мы предлагаем широкий спектр проводов и кабелей как бытового, так и профессионального назначения для любых видов инсталляций. Наша продукция продолжает завоёвывать новые рынки: неуклонно растёт число наших дистрибьюторов в мире и все больше любителей хорошего звука во многих странах делают свой выбор в пользу Tchernov Cable.
+					//	/descript
+
+					// lines
+					section.lines
+						h2.title Линейки продуктов
+						p.lines__text В изделиях Tchernov Cable используется самое качественное сырьё, материалы и комплектующие
+						#linesSlider.lines__slider
+							.row.swiper-wrapper
+								.lines__col.swiper-slide
+									a(href="#").lines__card 
+										img(src="img/lines-standart.jpg", alt="").lines__img
+										.lines__title.color-standard Standard
+								.lines__col.swiper-slide
+									a(href="#").lines__card 
+										img(src="img/lines-special.jpg", alt="").lines__img
+										.lines__title.color-special Special
+								.lines__col.swiper-slide
+									a(href="#").lines__card 
+										img(src="img/lines-classic.jpg", alt="").lines__img
+										.lines__title.color-classic Classic
+								.lines__col.swiper-slide
+									a(href="#").lines__card 
+										img(src="img/lines-reference.jpg", alt="").lines__img
+										.lines__title.color-reference Reference
+								.lines__col.swiper-slide
+									a(href="#").lines__card 
+										img(src="img/lines-ultimate.jpg", alt="").lines__img
+										.lines__title.color-ultimate Ultimate
+								.lines__col.swiper-slide
+									a(href="#").lines__card 
+										img(src="img/lines-pro.jpg", alt="").lines__img
+										.lines__title.color-pro Pro
+					//	/lines
+
+					// types
+					section.types
+						h2.title Типы кабеля
+						p.types__text Все конструкции Tchernov Cable с медными токопроводящими жилами и экранами — наши собственные разработки
+						#typesSlider.types__slider
+							.row.swiper-wrapper
+								.types__col.swiper-slide
+									a(href="#").types__card
+										.types__img
+											img(src="img/cable-digital.jpg", alt="")
+										.types__title Аналоговые <br>межкомпонентные кабели
+								.types__col.swiper-slide
+									a(href="#").types__card
+										.types__img
+											img(src="img/cable-dimmer.jpg", alt="")
+										.types__title Цифровые <br>межкомпонентные кабели
+								.types__col.swiper-slide
+									a(href="#").types__card
+										.types__img
+											img(src="img/cable-sw.jpg", alt="")
+										.types__title Сабвуферные кабели
+								.types__col.swiper-slide
+									a(href="#").types__card
+										.types__img
+											img(src="img/cable-accoustic.jpg", alt="")
+										.types__title Аккустические <br>кабели
+								.types__col.swiper-slide
+									a(href="#").types__card
+										.types__img
+											img(src="img/cable-power.jpg", alt="")
+										.types__title Силовые кабели
+								.types__col.swiper-slide
+									a(href="#").types__card
+										.types__img
+											img(src="img/cable-jacks.jpg", alt="")
+										.types__title Разъемы
+					//	/types
 			
 		include blocks/footer.pug
 
 block js-libs
-	script(src="js/libs/aos.js")
 	script(src="js/libs/swiper-bundle.min.js") 

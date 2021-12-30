@@ -7,7 +7,7 @@
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
 $max-width: 1280px; // Максимальная ширина контейнера
-$gutter: 15px; // Расстояние между колонками
+$gutter: 30px; // Расстояние между колонками
 $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
 // Брэйкпоинты
@@ -22,12 +22,15 @@ $break_xs: 500px;
 
 // Подключение файлов
 @import 'blocks/settings';
-// @import 'hamburgers/hamburgers';
+@import 'hamburgers/hamburgers';
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/search';
 @import 'blocks/lang';
 @import 'blocks/welcome';
+@import 'blocks/descript';
+@import 'blocks/lines';
+@import 'blocks/types';
 // @import 'blocks/accordion';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';

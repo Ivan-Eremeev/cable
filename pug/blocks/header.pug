@@ -2,7 +2,7 @@
 header.header#header
 	.wrapper
 
-		.header__logo 
+		.header__logo.tablet-hide
 			a(href="#") 
 				img(src="img/logo.svg", alt="")
 
@@ -22,9 +22,9 @@ header.header#header
 
 			// menu
 			.js-menu.menu.menu--right
-				#menu-btn.menu__btn.hamburger.hamburger--squeeze
-					.hamburger-box
-						.hamburger-inner
+				.header__logo.tablet-visible
+					a(href="#") 
+						img(src="img/logo.svg", alt="")
 				nav.menu__nav
 					ul.menu__list
 						li.menu__child
@@ -66,17 +66,17 @@ header.header#header
 										li 
 											span.menu__title Линейки
 										li 
-											a(href="#").menu-standard StandarD
+											a(href="#").color-standard StandarD
 										li 
-											a(href="#").menu-special Special
+											a(href="#").color-special Special
 										li 
-											a(href="#").menu-classic Classic
+											a(href="#").color-classic Classic
 										li 
-											a(href="#").menu-reference Reference
+											a(href="#").color-reference Reference
 										li 
-											a(href="#").menu-ultimate Ultimate
+											a(href="#").color-ultimate Ultimate
 										li 
-											a(href="#").menu-pro Pro
+											a(href="#").color-pro Pro
 						li
 							a(href="#") Новости
 						li
@@ -90,7 +90,7 @@ header.header#header
 			// /menu
 
 			// lang
-			.lang
+			.lang.tablet-hide
 				.lang__btn.js-dropTrigger(data-drop="langDrop") RU
 				.lang__drop#langDrop
 					ul.lang__list 
@@ -101,5 +101,9 @@ header.header#header
 						li 
 							a(href="#") 中文
 			//	/lang
+
+			#menu-btn.menu__btn.hamburger.hamburger--squeeze
+				.hamburger-box
+					.hamburger-inner
 
 // /header

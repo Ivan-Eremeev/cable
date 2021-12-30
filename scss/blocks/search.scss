@@ -73,4 +73,29 @@
       background-color: lighten(#BDBDBD, 10%);
     }
   }
+  @media (max-width: $break_md) {
+    padding-bottom: 0;
+    &__icon {
+      padding: 30px 0;
+      padding-right: 12px;
+      svg {
+        circle {
+          stroke: #fff;
+        }
+        rect {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    position: static;
+    &__icon {
+      padding: 0;
+      padding-right: 12px;
+    }
+    &__drop {
+      width: 100%;
+    }
+  }
 }
