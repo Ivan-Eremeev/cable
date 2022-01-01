@@ -36,7 +36,8 @@ const gulp = require('gulp'),
   gcmq = require('gulp-group-css-media-queries'),
   imageMin = require('gulp-imagemin'),
   pngquant = require('imagemin-pngquant'),
-  plumber = require('gulp-plumber');
+  plumber = require('gulp-plumber'),
+  webp = require('gulp-webp');
 
 gulp.task('pug', function () {
   return gulp.src(pugPath + '/*.pug')
@@ -154,6 +155,12 @@ gulp.task('watch', function () {
   gulp.watch(scssPath + '/**/*.scss', gulp.parallel('style'));
   gulp.watch(lessPath + '/**/*.less', gulp.parallel('style'));
 });
+
+gulp.task('webp', () =>
+  gulp.src(imgPath + '/**/*.*')
+    .pipe(webp())
+    .pipe(gulp.dest(imgPath + '/webp'))
+);
 
 gulp.task('default', gulp.parallel('browser-sync', 'pug', 'js', 'style', 'watch'));
 
