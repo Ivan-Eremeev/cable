@@ -18,10 +18,11 @@ header.header#header
 					.search__input 
 						input(type="text")
 					button(type="submit").search__btn Искать
+					.search__cross.js-dropClose(data-drop="searchDrop")
 			//	/search
 
 			// menu
-			.js-menu.menu.menu--right
+			#menu.menu.menu--left
 				.header__logo.tablet-visible
 					a(href="#") 
 						img(src="img/logo.svg", alt="")
@@ -32,6 +33,10 @@ header.header#header
 							ul.menu__drop 
 								li
 									ul.menu__sublist 
+										li.menu__back
+											svg(width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+												path(d="M13.7129 25.8553L1.99971 14.1422L13.7129 2.42899" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round")
+												line(x1="3.28418" y1="14.2843" x2="24.2842" y2="14.2843" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round")
 										li 
 											a(href="#") Компания
 										li 
@@ -47,6 +52,10 @@ header.header#header
 							ul.menu__drop 
 								li 
 									ul.menu__sublist 
+										li.menu__back
+											svg(width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+												path(d="M13.7129 25.8553L1.99971 14.1422L13.7129 2.42899" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round")
+												line(x1="3.28418" y1="14.2843" x2="24.2842" y2="14.2843" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round")
 										li
 											span.menu__title Типы кабелей
 										li 
@@ -85,8 +94,14 @@ header.header#header
 							a(href="#") FAQ
 						li
 							a(href="#") Контакты
+					ul.lang__list.tablet-visible
+						li 
+							a(href="#") Ру
+						li 
+							a(href="#") En
+						li 
+							a(href="#") 中文
 					#menu-close.menu__close
-				#menu-over.menu__over
 			// /menu
 
 			// lang

@@ -71,7 +71,7 @@
         }
         .news__img {
           height: auto;
-          @include col(8);
+          width: 65.666667%;
         }
         .news__content {
           @include col(4);

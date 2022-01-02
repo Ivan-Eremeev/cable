@@ -29,11 +29,12 @@
 									<input type="text">
 								</div>
 								<button class="search__btn" type="submit">Искать</button>
+								<div class="search__cross js-dropClose" data-drop="searchDrop"></div>
 							</form>
 						</div>
 						<!--	/search-->
 						<!-- menu-->
-						<div class="js-menu menu menu--right">
+						<div class="menu menu--left" id="menu">
 							<div class="header__logo tablet-visible"><a href="#"> <img src="img/logo.svg" alt=""></a></div>
 							<nav class="menu__nav">
 								<ul class="menu__list">
@@ -41,6 +42,12 @@
 										<ul class="menu__drop"> 
 											<li>
 												<ul class="menu__sublist"> 
+													<li class="menu__back">
+														<svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M13.7129 25.8553L1.99971 14.1422L13.7129 2.42899" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></path>
+															<line x1="3.28418" y1="14.2843" x2="24.2842" y2="14.2843" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></line>
+														</svg>
+													</li>
 													<li> <a href="#">Компания</a></li>
 													<li> <a href="#">Философия</a></li>
 													<li> <a href="#">Основные принципы</a></li>
@@ -54,6 +61,12 @@
 										<ul class="menu__drop"> 
 											<li> 
 												<ul class="menu__sublist"> 
+													<li class="menu__back">
+														<svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M13.7129 25.8553L1.99971 14.1422L13.7129 2.42899" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></path>
+															<line x1="3.28418" y1="14.2843" x2="24.2842" y2="14.2843" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></line>
+														</svg>
+													</li>
 													<li><span class="menu__title">Типы кабелей</span></li>
 													<li> <a href="#">Аналоговые межкомпонентные кабели</a></li>
 													<li> <a href="#">Цифровые межкомпонентные кабели</a></li>
@@ -81,9 +94,13 @@
 									<li><a href="#">FAQ</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
+								<ul class="lang__list tablet-visible">
+									<li> <a href="#">Ру</a></li>
+									<li> <a href="#">En</a></li>
+									<li> <a href="#">中文</a></li>
+								</ul>
 								<div class="menu__close" id="menu-close"></div>
 							</nav>
-							<div class="menu__over" id="menu-over"></div>
 						</div>
 						<!-- /menu-->
 						<!-- lang-->
