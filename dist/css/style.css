@@ -518,7 +518,6 @@ body.lock {
   display: inline-block;
   margin: 0;
   padding: 3px 10px;
-  white-space: nowrap;
 }
 .menu__title {
   padding: 3px 10px;
@@ -548,6 +547,9 @@ body.lock {
     -o-transition: 0.5s;
     transition: 0.5s;
     visibility: hidden;
+  }
+  .menu__sublist a {
+    white-space: nowrap;
   }
   .menu__sublist a:hover {
     background-color: #333;
