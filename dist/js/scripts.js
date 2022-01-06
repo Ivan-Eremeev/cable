@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	drop();
 	
-	// Swiper slider
+	// Swiper Welcome
 	const swiperWelcome = new Swiper('#welcomeSlider', {
 		effect: 'fade',
 		speed: 1000,
@@ -183,5 +183,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 	menu();
+
+	// Swiper Description
+	const swiperDescription = new Swiper('#descriptionSlider', {
+		slidesPerView: 1.06,
+		pagination: {
+			el: '.description__pagination',
+			clickable: true,
+		},
+		navigation: {
+			prevEl: '.description__btn--prev',
+			nextEl: '.description__btn--next',
+		},
+		breakpoints: {
+			500: {
+				slidesPerView: 1,
+			},
+		}
+	});
 
 });

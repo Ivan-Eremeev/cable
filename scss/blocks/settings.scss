@@ -78,6 +78,10 @@ body {
   @include col(9);
   margin-left: 16.6%;
   margin-right: 8.3%;
+  &--2 {
+    @include col(8);
+    margin-right: 16.6%;
+  }
   @media (max-width: $break_md) {
     margin-left: 0;
     margin-right: 0;

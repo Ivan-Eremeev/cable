@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Главная</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page">
+			<!-- header-->
+			<header class="header" id="header">
+				<div class="wrapper">
+					<div class="header__logo tablet-hide"><a href="#"> <img src="img/logo.svg" alt=""></a></div>
+					<div class="header__container">
+						<!-- search-->
+						<div class="search">
+							<div class="search__icon js-dropTrigger" data-drop="searchDrop">
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="10" cy="10.5" r="6.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+									<rect x="13.3008" y="15.5264" width="1.75469" height="6.74683" rx="0.877343" transform="rotate(-45 13.3008 15.5264)"></rect>
+								</svg>
+							</div>
+							<form class="search__drop" action="#" id="searchDrop">
+								<div class="search__input"> 
+									<input type="text">
+								</div>
+								<button class="search__btn" type="submit">Искать</button>
+								<div class="search__cross js-dropClose" data-drop="searchDrop"></div>
+							</form>
+						</div>
+						<!--	/search-->
+						<!-- menu-->
+						<div class="menu menu--left" id="menu">
+							<div class="header__logo tablet-visible"><a href="#"> <img src="img/logo.svg" alt=""></a></div>
+							<nav class="menu__nav">
+								<ul class="menu__list">
+									<li class="menu__child"><a href="#">Бренд</a>
+										<ul class="menu__drop"> 
+											<li>
+												<ul class="menu__sublist"> 
+													<li class="menu__back">
+														<svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M13.7129 25.8553L1.99971 14.1422L13.7129 2.42899" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></path>
+															<line x1="3.28418" y1="14.2843" x2="24.2842" y2="14.2843" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></line>
+														</svg>
+													</li>
+													<li> <a href="#">Компания</a></li>
+													<li> <a href="#">Философия</a></li>
+													<li> <a href="#">Основные принципы</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">Технологии</a></li>
+									<li><a href="#">Материалы</a></li>
+									<li class="menu__child"><a href="#">Продукция</a>
+										<ul class="menu__drop"> 
+											<li> 
+												<ul class="menu__sublist"> 
+													<li class="menu__back">
+														<svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M13.7129 25.8553L1.99971 14.1422L13.7129 2.42899" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></path>
+															<line x1="3.28418" y1="14.2843" x2="24.2842" y2="14.2843" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"></line>
+														</svg>
+													</li>
+													<li><span class="menu__title">Типы кабелей</span></li>
+													<li> <a href="#">Аналоговые межкомпонентные кабели</a></li>
+													<li> <a href="#">Цифровые межкомпонентные кабели</a></li>
+													<li> <a href="#">Сабвуферные кабели</a></li>
+													<li> <a href="#">Аккустические кабели</a></li>
+													<li> <a href="#">Силовые кабели</a></li>
+													<li> <a href="#">Разъемы</a></li>
+												</ul>
+											</li>
+											<li> 
+												<ul class="menu__sublist menu__sublist--lines">
+													<li> <span class="menu__title">Линейки</span></li>
+													<li> <a class="color-standard" href="#">StandarD</a></li>
+													<li> <a class="color-special" href="#">Special</a></li>
+													<li> <a class="color-classic" href="#">Classic</a></li>
+													<li> <a class="color-reference" href="#">Reference</a></li>
+													<li> <a class="color-ultimate" href="#">Ultimate</a></li>
+													<li> <a class="color-pro" href="#">Pro</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Тесты</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<ul class="lang__list tablet-visible">
+									<li> <a href="#">Ру</a></li>
+									<li> <a href="#">En</a></li>
+									<li> <a href="#">中文</a></li>
+								</ul>
+								<div class="menu__close" id="menu-close"></div>
+							</nav>
+						</div>
+						<!-- /menu-->
+						<!-- lang-->
+						<div class="lang tablet-hide">
+							<div class="lang__btn js-dropTrigger" data-drop="langDrop">RU</div>
+							<div class="lang__drop" id="langDrop">
+								<ul class="lang__list"> 
+									<li> <a href="#">Русский</a></li>
+									<li> <a href="#">English</a></li>
+									<li> <a href="#">中文</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--	/lang-->
+						<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- /header-->
+			<div class="content">
+				<!-- teaser-->
+				<section class="teaser">
+					<picture class="teaser__img"> 
+						<source srcset="img/teaser.jpg 1x, img/teaser_2x.jpg 2x"><img src="img/teaser.jpg" alt="">
+					</picture>
+					<div class="wrapper"> 
+						<div class="container container--2">
+							<div class="teaser__content"> 
+								<h1 class="teaser__title"> <span class="color-reference">REFERENCE </span>MKII IC</h1>
+								<p class="teaser__text">Симметричный кабель класса High End с экраном X-Shield® SE и нормированным волновым сопротивлением 110 Ом. Многопроволочные BRC проводники большого сечения 1,00 мм2 подвешены в продольно-волокнистой хлопковой среде с большим декрементом затухания колебаний по методу «Торсионного волокнистого демпфирования» FTDA®.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--	/teaser-->
+				<!-- description-->
+				<div class="description">
+					<div class="wrapper"> 
+						<div class="container container--2">
+							<div class="description__text">Технология FTDA® обеспечивает 20–50 кратное поглощение воздействующих на проводники механических вибраций, что заметно улучшает динамику и разрешение в широком диапазоне частот. Комбинация индивидуальной и поясной изоляции SATI®/SDB обеспечивает максимальную электропроводность и снижает до минимума диэлектрическую проницаемость и потери энергии сигнала. Система X-Shield® SE эффективно подавляет ЭМП в расширенной полосе частот.</div>
+							<div class="description__slider" id="descriptionSlider"> 
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="description__item">
+											<picture class="description__img"> 
+												<source srcset="img/cable.jpg 1x, img/cable_2x.jpg 2x"><img src="img/cable.jpg" alt="">
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="description__item">
+											<picture class="description__img"> 
+												<source srcset="img/cable.jpg 1x, img/cable_2x.jpg 2x"><img src="img/cable.jpg" alt="">
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="description__item">
+											<picture class="description__img"> 
+												<source srcset="img/cable.jpg 1x, img/cable_2x.jpg 2x"><img src="img/cable.jpg" alt="">
+											</picture>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-prev description__btn description__btn--prev">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_756_109)">
+											<path d="M20.7129 32.2871L7.32476 16.1423L20.7129 -0.00253202" stroke="white" stroke-width="4" stroke-linecap="square"></path>
+										</g>
+										<defs>
+											<clipPath id="clip0_756_109">
+												<rect width="32" height="32" fill="white" transform="translate(32 32) rotate(-180)"></rect>
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="swiper-button-next description__btn description__btn--next">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_756_111)">
+											<path d="M11.2871 -0.287109L24.6752 15.8577L11.2871 32.0025" stroke="white" stroke-width="4" stroke-linecap="square"></path>
+										</g>
+										<defs>
+											<clipPath id="clip0_756_111">
+												<rect width="32" height="32" fill="white"></rect>
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</div>
+							<div class="swiper-pagination description__pagination"></div>
+							<div class="description__text">Эластичная оболочка из ТПУ Elastollan® обеспечивает долговременную стабильность всех параметров и эффективно демпфирует акустические шумы и вибрационные воздействия. Бескомпромиссные решения в области комплексного изолирования, демпфирования и экранирования ставят Reference MkII IC в один ряд с лучшими мировыми аналогами, вне зависимости от цены. Его звучание отличает широчайший динамический диапазон и математическая точность воспроизведения всех мельчайших деталей и нюансов фонограммы.</div>
+						</div>
+					</div>
+				</div>
+				<!--	/description-->
+				<!-- parameters-->
+				<section class="parameters">
+					<div class="wrapper"> 
+						<div class="container container--2">
+							<h2 class="title">Характеристики</h2>
+							<div class="parameters__table"> 
+								<table>
+									<tr>
+										<td>Тип:</td>
+										<td>аналоговый симметричный межкомпонентный кабель класса High End</td>
+									</tr>
+									<tr>
+										<td>Волновое сопротивление:	</td>
+										<td>110 Ом</td>
+									</tr>
+									<tr>
+										<td>Проводник:</td>
+										<td>многопроволочные BRC проводники 2 х 1,00 мм² (19 х 0,26 мм)</td>
+									</tr>
+									<tr>
+										<td>Изоляция проводника:</td>
+										<td>SATI®</td>
+									</tr>
+									<tr>
+										<td>Демпфирование проводника:</td>
+										<td>метод FTDA®</td>
+									</tr>
+									<tr>
+										<td>Поясная изоляция:</td>
+										<td>SDB</td>
+									</tr>
+									<tr>
+										<td>Экран:</td>
+										<td>X-Shield® SE</td>
+									</tr>
+									<tr>
+										<td>Оболочка:</td>
+										<td>ТПУ Elastollan®</td>
+									</tr>
+									<tr>
+										<td>Защитное покрытие:</td>
+										<td>нейлоновый рукав</td>
+									</tr>
+									<tr>
+										<td>Внешний диаметр:</td>
+										<td>10 мм</td>
+									</tr>
+									<tr>
+										<td>Терминирование:</td>
+										<td>RCA/RCA, XLR/XLR с прецизионными разъемами Reference V2</td>
+									</tr>
+									<tr>
+										<td>В продаже:</td>
+										<td>в стандартных терминированных длинах</td>
+									</tr>
+									<tr>
+										<td>Страна происхождения:</td>
+										<td>сделано в России</td>
+									</tr>
+								</table>
+							</div>
+							<div class="parameters__remark">
+								<p>Ввиду сложности конструкции и большой материалоёмкости первоначальный «прогрев» (выход на оптимальные параметры звучания) занимает не менее 100 часов непрерывного воспроизведения музыки. Мы настоятельно рекомендуем на этапе «прогрева» проигрывать музыку разных жанров.</p>
+								<p>В целях усовершенствования продукции Tchernov Cable оставляет за собой право вносить изменения в указанные характеристики и внешний вид готовых изделий без предварительного уведомления.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /parameters-->
+				<!-- length-->
+				<section class="length">
+					<div class="wrapper"> 
+						<div class="container container--2">
+							<div class="title">Доступные длины</div>
+							<div class="row"> 
+								<div class="length__col">2 x 0,62 м</div>
+								<div class="length__col">2 x 1,65 м</div>
+								<div class="length__col">2 x 4,35 м</div>
+								<div class="length__col">2 x 1,00 м</div>
+								<div class="length__col">2 x 2,65 м</div>
+								<div class="length__col">2 x 5,00 м</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /length-->
+			</div>
+			<!-- footer-->
+			<footer class="footer"> 
+				<div class="wrapper"> 
+					<div class="container">
+						<div class="footer__top">
+							<div class="row"> 
+								<div class="footer__col"> 
+									<ul class="footer__list">
+										<li> <a href="#">Загрузить каталог</a></li>
+										<li> <a href="#">Shop Europe</a></li>
+										<li> <a href="#">Магазин</a></li>
+										<li> <a href="#">Архив моделей</a></li>
+										<li> <a href="#">Галерея</a></li>
+										<li> <a href="#">Задать вопрос</a></li>
+										<li> <a href="#">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="footer__col"> 
+									<ul class="footer__list footer__list--2">
+										<li> <span>Чернов Аудио</span><span>ул. 3-я магистральная 30/2</span><span>123007, Москва, Россия</span></li>
+										<li> <a href="tel:+74957211381">+7 (495) 721-13-81</a></li>
+										<li> <a href="mailto:sales@tchernovcable.com">sales@tchernovcable.com</a></li>
+									</ul>
+								</div>
+								<div class="footer__col"> 
+									<div class="footer__social"> <a class="footer__icon" href="#"> 
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.66669 23.2V13.1813H6.40002V9.20005H9.66669V6.05005C9.66669 4.38755 10.1192 3.09692 11.0243 2.17817C11.9293 1.25942 13.1313 0.800049 14.6303 0.800049C15.8465 0.800049 16.8364 0.858382 17.6 0.975049V4.5188H15.5637C14.8 4.5188 14.2768 4.6938 13.994 5.0438C13.7677 5.33547 13.6546 5.80213 13.6546 6.4438V9.20005H17.2606L16.7515 13.1813H13.6546V23.2H9.66669Z" fill="#BDBDBD"></path>
+											</svg></a><a class="footer__icon" href="#"> 
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M20.8812 7.59995C20.9103 7.71277 20.9249 7.8961 20.9249 8.14995C20.9249 10.1807 20.4145 12.141 19.3937 14.0307C18.3437 16.0333 16.8708 17.6269 14.9749 18.8115C12.9041 20.1371 10.527 20.8 7.84368 20.8C5.27701 20.8 2.92909 20.1371 0.799927 18.8115C1.12076 18.8397 1.48534 18.8538 1.89368 18.8538C4.02284 18.8538 5.93326 18.2192 7.62493 16.95C6.60409 16.95 5.70722 16.6608 4.9343 16.0826C4.16138 15.5044 3.62909 14.7782 3.33743 13.9038C3.62909 13.932 3.90618 13.9461 4.16868 13.9461C4.57701 13.9461 4.98534 13.9038 5.39368 13.8192C4.34368 13.5935 3.46868 13.0717 2.76868 12.2538C2.06868 11.4358 1.71868 10.5051 1.71868 9.46149V9.37687C2.36034 9.74354 3.04576 9.94098 3.77493 9.96918C3.16243 9.54611 2.66659 9.01021 2.28743 8.36149C1.90826 7.71277 1.71868 7.00059 1.71868 6.22495C1.71868 5.44931 1.93743 4.70893 2.37493 4.0038C3.51243 5.38585 4.90513 6.48585 6.55305 7.3038C8.20097 8.12175 9.95826 8.57303 11.8249 8.65764C11.7666 8.31918 11.7374 7.98072 11.7374 7.64226C11.7374 6.85252 11.9416 6.11213 12.3499 5.42111C12.7583 4.73008 13.3124 4.18713 14.0124 3.79226C14.7124 3.39739 15.4708 3.19995 16.2874 3.19995C16.9583 3.19995 17.578 3.32687 18.1468 3.58072C18.7155 3.83457 19.2187 4.17303 19.6562 4.59611C20.7062 4.39867 21.6833 4.04611 22.5874 3.53841C22.2374 4.582 21.5666 5.39995 20.5749 5.99226C21.4499 5.87944 22.3249 5.6397 23.1999 5.27303C22.5583 6.17559 21.7853 6.95123 20.8812 7.59995Z" fill="#BDBDBD"></path>
+											</svg></a><a class="footer__icon" href="#"> 
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.75993 15.4286V8.57143L15.5794 12L9.75993 15.4286ZM22.7318 6.49854C22.4742 5.51517 21.7153 4.74058 20.7514 4.47772C19.0047 4 11.9999 4 11.9999 4C11.9999 4 4.9952 4 3.24825 4.47772C2.28455 4.74058 1.52544 5.51517 1.26809 6.49854C0.799928 8.28089 0.799927 12 0.799927 12C0.799927 12 0.799928 15.7191 1.26809 17.5015C1.52544 18.4851 2.28455 19.2594 3.24825 19.5223C4.9952 20 11.9999 20 11.9999 20C11.9999 20 19.0047 20 20.7514 19.5223C21.7153 19.2594 22.4742 18.4851 22.7318 17.5015C23.1999 15.7191 23.1999 12 23.1999 12C23.1999 12 23.1999 8.28089 22.7318 6.49854Z" fill="#BDBDBD"></path>
+											</svg></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__bottom">© 2011–2021 Tchernov Audio GmbH</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /footer-->
+		</div>
+		<script src="js/libs/swiper-bundle.min.js"> </script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

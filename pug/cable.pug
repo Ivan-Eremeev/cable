@@ -1,0 +1,139 @@
+extends blocks/base.pug
+
+block title 
+	title Главная
+
+block style-libs
+	link(rel="stylesheet", href="css/libs/swiper-bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+
+			// teaser
+			section.teaser
+				picture.teaser__img 
+					source(srcset="img/teaser.jpg 1x, img/teaser_2x.jpg 2x")
+					img(src="img/teaser.jpg", alt="")
+				.wrapper 
+					.container.container--2
+						.teaser__content 
+							h1.teaser__title 
+								span.color-reference REFERENCE 
+								| MKII IC
+							p.teaser__text Симметричный кабель класса High End с экраном X-Shield® SE и нормированным волновым сопротивлением 110 Ом. Многопроволочные BRC проводники большого сечения 1,00 мм2 подвешены в продольно-волокнистой хлопковой среде с большим декрементом затухания колебаний по методу «Торсионного волокнистого демпфирования» FTDA®.
+			//	/teaser
+
+			// description
+			.description
+				.wrapper 
+					.container.container--2
+						.description__text Технология FTDA® обеспечивает 20–50 кратное поглощение воздействующих на проводники механических вибраций, что заметно улучшает динамику и разрешение в широком диапазоне частот. Комбинация индивидуальной и поясной изоляции SATI®/SDB обеспечивает максимальную электропроводность и снижает до минимума диэлектрическую проницаемость и потери энергии сигнала. Система X-Shield® SE эффективно подавляет ЭМП в расширенной полосе частот.
+						#descriptionSlider.description__slider 
+							.swiper-wrapper
+								.swiper-slide
+									.description__item
+										picture.description__img 
+											source(srcset="img/cable.jpg 1x, img/cable_2x.jpg 2x")
+											img(src="img/cable.jpg", alt="")
+								.swiper-slide
+									.description__item
+										picture.description__img 
+											source(srcset="img/cable.jpg 1x, img/cable_2x.jpg 2x")
+											img(src="img/cable.jpg", alt="")
+								.swiper-slide
+									.description__item
+										picture.description__img 
+											source(srcset="img/cable.jpg 1x, img/cable_2x.jpg 2x")
+											img(src="img/cable.jpg", alt="")
+							.swiper-button-prev.description__btn.description__btn--prev
+								svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+									g(clip-path="url(#clip0_756_109)")
+										path(d="M20.7129 32.2871L7.32476 16.1423L20.7129 -0.00253202" stroke="white" stroke-width="4" stroke-linecap="square")
+									defs
+										clipPath(id="clip0_756_109")
+											rect(width="32" height="32" fill="white" transform="translate(32 32) rotate(-180)")
+							.swiper-button-next.description__btn.description__btn--next
+								svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+									g(clip-path="url(#clip0_756_111)")
+										path(d="M11.2871 -0.287109L24.6752 15.8577L11.2871 32.0025" stroke="white" stroke-width="4" stroke-linecap="square")
+									defs
+										clipPath(id="clip0_756_111")
+											rect(width="32" height="32" fill="white")
+						.swiper-pagination.description__pagination
+						.description__text Эластичная оболочка из ТПУ Elastollan® обеспечивает долговременную стабильность всех параметров и эффективно демпфирует акустические шумы и вибрационные воздействия. Бескомпромиссные решения в области комплексного изолирования, демпфирования и экранирования ставят Reference MkII IC в один ряд с лучшими мировыми аналогами, вне зависимости от цены. Его звучание отличает широчайший динамический диапазон и математическая точность воспроизведения всех мельчайших деталей и нюансов фонограммы.
+			//	/description
+
+			// parameters
+			section.parameters
+				.wrapper 
+					.container.container--2
+						h2.title Характеристики
+						.parameters__table 
+							table
+								tr
+									td Тип:
+									td аналоговый симметричный межкомпонентный кабель класса High End
+								tr
+									td Волновое сопротивление:	
+									td 110 Ом
+								tr
+									td Проводник:
+									td многопроволочные BRC проводники 2 х 1,00 мм² (19 х 0,26 мм)
+								tr
+									td Изоляция проводника:
+									td SATI®
+								tr
+									td Демпфирование проводника:
+									td метод FTDA®
+								tr
+									td Поясная изоляция:
+									td SDB
+								tr
+									td Экран:
+									td X-Shield® SE
+								tr
+									td Оболочка:
+									td ТПУ Elastollan®
+								tr
+									td Защитное покрытие:
+									td нейлоновый рукав
+								tr
+									td Внешний диаметр:
+									td 10 мм
+								tr
+									td Терминирование:
+									td RCA/RCA, XLR/XLR с прецизионными разъемами Reference V2
+								tr
+									td В продаже:
+									td в стандартных терминированных длинах
+								tr
+									td Страна происхождения:
+									td сделано в России
+						.parameters__remark
+							p Ввиду сложности конструкции и большой материалоёмкости первоначальный «прогрев» (выход на оптимальные параметры звучания) занимает не менее 100 часов непрерывного воспроизведения музыки. Мы настоятельно рекомендуем на этапе «прогрева» проигрывать музыку разных жанров.
+							p В целях усовершенствования продукции Tchernov Cable оставляет за собой право вносить изменения в указанные характеристики и внешний вид готовых изделий без предварительного уведомления.
+			// /parameters
+
+			// length
+			section.length
+				.wrapper 
+					.container.container--2
+						.title Доступные длины
+						.row 
+							.length__col 2 x 0,62 м
+							.length__col 2 x 1,65 м
+							.length__col 2 x 4,35 м
+							.length__col 2 x 1,00 м
+							.length__col 2 x 2,65 м
+							.length__col 2 x 5,00 м
+			// /length
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/swiper-bundle.min.js") 

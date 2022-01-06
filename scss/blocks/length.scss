@@ -1,0 +1,32 @@
+.length {
+  margin-bottom: 60px;
+  .title {
+    margin-bottom: 20px;
+  }
+  .row {
+    max-width: 630px;
+  }
+  &__col {
+    @include col(4);
+    @include col-xs(6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &:nth-child(3n) {
+      border-left: 1px solid #E3E4E7;
+    }
+    &:nth-child(3n - 1) {
+      border-left: 1px solid #E3E4E7;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__col {
+      border: none;
+      font-size: 16px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      &:nth-child(2n) {
+        border-left: 1px solid #E3E4E7;
+      }
+    }
+  }
+}
