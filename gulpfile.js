@@ -157,7 +157,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('webp', () =>
-  gulp.src(imgPath + '/**/*.jpg')
+  gulp.src(imgPath + '/**/*.*')
     .pipe(webp())
     .pipe(gulp.dest(imgPath + '/webp'))
 );
