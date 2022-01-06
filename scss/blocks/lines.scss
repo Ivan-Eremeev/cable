@@ -1,5 +1,8 @@
 .lines {
   margin-bottom: 30px;
+  &--last {
+    margin-bottom: 120px;
+  }
   &__text {
     max-width: 740px;
     margin-bottom: 30px;
@@ -23,14 +26,20 @@
     object-position: center;
   }
   &__title {
+    max-width: 90%;
     font-size: 24px;
     line-height: 1.1;
     letter-spacing: 0.05em;
+    color: #000;
     text-transform: uppercase;
     position: absolute;
     top: 30px;
     left: 30px;
     z-index: 2;
+    &--small {
+      font-size: 16px;
+      letter-spacing: 0;
+    }
   }
   @media (min-width: $break_sm + 1) {
     .row {
@@ -45,6 +54,9 @@
   }
   @media (max-width: $break_sm) {
     margin-bottom: 40px;
+    &--last {
+      margin-bottom: 80px;
+    }
     .row {
       flex-wrap: nowrap;
       margin-left: -20px;
